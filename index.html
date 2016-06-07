@@ -8,7 +8,7 @@
     <body>
         <header>
             <div id="logo">
-                <img src="images/logo.jpg" class="logo_norm"/>
+                <img src="images/logo.png" width="200px"/>
             </div>
             <nav>
                 <ul id="menu">
@@ -37,7 +37,66 @@
                 </ul>
             </nav>
         </header>
-        <div id="page_index"></div>
+        <div class="card_content">
+            <h2>La meilleure voie pour obtenir le meilleur ticket de car !</h2>
+            <hr/>
+            <div class="row">
+                <div class="colum">
+                    <label class="label_card">Depart</label>
+                    <input type="text" name="depart_lieu" placeholder="Choisissez une ville" class="input_card" autocomplete="off"/>
+                    <label class="label_card">Date de depart</label>
+                    <input type="date" name="depart_date" class="input_card"/>
+                </div>
+                <div class="colum">
+                    <label class="label_card">Arrivée</label>
+                    <input type="text" name="arrive_lieu" placeholder="Choisissez une ville" class="input_card" autocomplete="off"/>
+                    <label class="label_card">Date de retour</label>
+                    <input type="date" name="arrive_date" class="input_card"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="colum medium">
+                    <label class="label_card">Adultes</label>
+                    <select name="adultes" class="input_card">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="colum medium">
+                    <label class="label_card">Enfants</label>
+                    <select name="enfants" class="input_card">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="colum medium">
+                    <label class="label_card">Senior</label>
+                    <select name="senior" class="input_card">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <input type="button" value="Chercher un car" id="send_card"/>
+            </div>
+        </div>
+        <div id="page_index">
+            <br />
+            <br />
+        </div>
         <footer></footer>
     </body>
 </html>
